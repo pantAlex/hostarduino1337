@@ -19,11 +19,19 @@ function setState(buttonName, state) {
 	if (state == "1")
 	{
 		$(buttonName + "On").addClass("selected");
+		$(buttonName + "Auto").removeClass("selected");
 		$(buttonName + "Off").removeClass("selected");
+	}
+	else if (state == "2")
+	{
+		$(buttonName + "Off").removeClass("selected");
+		$(buttonName + "Auto").addClass("selected");
+		$(buttonName + "On").removeClass("selected");
 	}
 	else
 	{
 		$(buttonName + "Off").addClass("selected");
+		$(buttonName + "Auto").removeClass("selected");
 		$(buttonName + "On").removeClass("selected");
 	}
 	
