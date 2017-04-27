@@ -33,11 +33,10 @@ function setState(buttonName, state) {
 function requestState() {
 	$.get("state", function(data) {
 		setState("main", data.charAt(0));
-		setState("entrance", data.charAt(1));
-		setState("livingR", data.charAt(2));
-		setState("bathR", data.charAt(3));
-		setState("kitchen", data.charAt(4));
-		setState("bedR", data.charAt(5));
+		setState("livingR", data.charAt(1));
+		setState("bathR", data.charAt(2));
+		setState("kitchen", data.charAt(3));
+		setState("bedR", data.charAt(4));
 		
 		setTimeout(requestState, 1000);
 	}, "text").fail(function() {
