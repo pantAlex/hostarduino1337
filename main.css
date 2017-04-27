@@ -11,7 +11,7 @@ body {
   background: -o-linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
   background: -moz-linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
   background: linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
-  background-image: url('http://cr4.sytes.net/Arduino/bg.jpg');
+  background-image: url('https://github.com/pantAlex/hostarduino1337/blob/master/bg.jpg?raw=true');
   background-size: 100% 100%;
 }
 
