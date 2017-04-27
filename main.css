@@ -1,0 +1,145 @@
+* {
+  font-family: 'Verdana', sans-serif;
+  color: #FFF;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  background: -webkit-linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
+  background: -o-linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
+  background: -moz-linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
+  background: linear-gradient(-45deg, rgb(70, 70, 70), rgb(20, 20, 20));
+  background-image: url('http://cr4.sytes.net/Arduino/bg.jpg');
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #FFF;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+#site {
+  transition: 0.2s;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+#site:hover {
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#button-container {
+  display: block;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#headbar {
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: default;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0px;
+  text-align: center;
+  cursor: default;
+}
+
+#logo {
+  background-image: url('logo.png');
+  background-size: cover;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  float: left;
+}
+#logo:after {
+  clear: both;
+}
+
+
+
+
+.category {
+  border-bottom: 1px #FFF solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.category:first-of-type {
+	margin-bottom: 30px;
+}
+.category:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.category-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button {
+  transition: 0.2s;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 2px #FFF solid;
+  cursor: pointer;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+}
+.button:hover {
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+}
+.selected {
+  color: #FFAE00 !important;
+  font-weight: bold;
+  border-color: #FFAE00; !important;
+  border-width: 4px; !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
